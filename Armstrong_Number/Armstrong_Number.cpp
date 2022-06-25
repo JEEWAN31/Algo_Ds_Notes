@@ -8,7 +8,7 @@ using namespace std;
 //To calculate the order of the number
 int order(int num)
 {
-    int count;
+    int count =0;
     while (num > 0)
     {
         count++;
@@ -24,7 +24,7 @@ int armstrong(int num, int count)
     while (num > 0)
     {
         //d is the remainder 
-        d = num % 10;
+        int d = num % 10;
         //To calculate sum
         sum += pow(d, count);        
         num /= 10;
@@ -34,15 +34,17 @@ int armstrong(int num, int count)
 
 int main()
 {
-    int num, d;
+    int num;
+    int d;
     cout << "Enter the number: ";
     cin >> num;    
 
+
     int count = order(num);     
-
+    cout<<count<<endl;
     int sum = armstrong(num, count);
-
-    if (sum == n)
+    cout<<sum;
+    if (sum == num)
         cout << "Armstrong number";
     else
         cout << "Not an armstrong number";  
