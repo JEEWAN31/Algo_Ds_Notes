@@ -1,7 +1,4 @@
-/*
-    @author: AkshitAggarwal
-    @date: 15/03/2019
-*/
+
 
 #include<iostream>
 
@@ -16,6 +13,7 @@ int towerOfHanoi(int n, char barFrom, char barTo, char barAuxillary)
     towerOfHanoi(n - 1, barFrom, barAuxillary, barTo);
     cout<<"\nMove disk "<< n <<" from "<<barFrom<<" to "<<barTo;
     towerOfHanoi(n - 1, barAuxillary, barTo, barFrom);
+    return 0;
 }
 
 int main()
