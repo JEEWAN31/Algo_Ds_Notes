@@ -1,0 +1,6 @@
+import pandas as pd
+sheet_id = '12UxpkVWVnmC2AHLid70k_zAG0ZxrFtq8r_Y8SRFLrsU'
+sheet_name = 'FOGSI city presidents'
+url = f'https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}'
+df = pd.read_csv(url)
+print(df)

@@ -43,7 +43,7 @@ int main()
     int count = order(num);     
     cout<<count<<endl;
     int sum = armstrong(num, count);
-    cout<<sum;
+    cout<<sum<<endl;
     if (sum == num)
         cout << "Armstrong number";
     else
@@ -52,5 +52,4 @@ int main()
     return 0;      
 }
 
-/*Enter the number: 153
-Armstrong number*/
+
